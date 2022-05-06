@@ -96,6 +96,11 @@ Data source: [Kaggle](https://www.kaggle.com/competitions/rossmann-store-sales/d
 
 ![Telegram Bot Architecture](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/img/11_bot_arch.jpg?raw=true)
 
+![Telegram Bot](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/img/bot.gif)
+
+You can launch the app here:
+[Telegram Bot](https://t.me/rossmann_lf_bot)
+
 ## 4 - Business Results
 
 | A | B | C |
