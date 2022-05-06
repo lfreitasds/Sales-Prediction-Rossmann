@@ -6,35 +6,24 @@
 
 [1 - Business Problem](https://github.com/lfreitas16/Sales-Prediction-Rossmann#1---business-problem)
 
-[1.1 - Description](https://github.com/lfreitas16/Sales-Prediction-Rossmann#11---description)
-
-[1.2 - Data Overview](https://github.com/lfreitas16/Sales-Prediction-Rossmann#12---data-overview)
+* [1.1 - Description](https://github.com/lfreitas16/Sales-Prediction-Rossmann#11---description)
+* [1.2 - Data Overview](https://github.com/lfreitas16/Sales-Prediction-Rossmann#12---data-overview)
 
 [2 - Business Assumptions](https://github.com/lfreitas16/Sales-Prediction-Rossmann#2---business-assumptions)
 
 [3 - Solution Strategy](https://github.com/lfreitas16/Sales-Prediction-Rossmann#3---solution-strategy)
 
-[Step 01 - Data Description](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-01---data-description)
-
-[Step 02 - Feature Engineering](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-02---feature-engineering)
-
-[Step 03 - Filtering Variables](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-03---filtering-variables)
-
-[Step 04 - Exploratory Data Analysis](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-04---exploratory-data-analysis)
-
-[Step 05 - Data Preparation](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-05---data-preparation)
-
-[Step 06 - Feature Selection](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-06---feature-selection)
-
-[Step 07 - Machine Learning Modeling](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-07---machine-learning-modeling)
-
-[Step 08 - Hyperparameter Fine Tuning](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-08---hyperparameter-fine-tuning)
-
-[Step 09 - Error Analysis](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-09---error-analysis)
-
-[Step 10 - Deploy Model To Production](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-10---deploy-model-to-production)
-
-[Step 11 - Telegram Bot](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-11---telegram-bot)
+* [Step 01 - Data Description](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-01---data-description)
+* [Step 02 - Feature Engineering](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-02---feature-engineering)
+* [Step 03 - Filtering Variables](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-03---filtering-variables)
+* [Step 04 - Exploratory Data Analysis](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-04---exploratory-data-analysis)
+* [Step 05 - Data Preparation](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-05---data-preparation)
+* [Step 06 - Feature Selection](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-06---feature-selection)
+* [Step 07 - Machine Learning Modeling](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-07---machine-learning-modeling)
+* [Step 08 - Hyperparameter Fine Tuning](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-08---hyperparameter-fine-tuning)
+* [Step 09 - Error Analysis](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-09---error-analysis)
+* [Step 10 - Deploy Model To Production](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-10---deploy-model-to-production)
+* [Step 11 - Telegram Bot](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-11---telegram-bot)
 
 [4 - Business Results](https://github.com/lfreitas16/Sales-Prediction-Rossmann#4---business-results)
 
