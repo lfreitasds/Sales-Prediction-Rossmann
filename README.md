@@ -131,3 +131,8 @@ You can find more information in the Project Notebook: [Notebook.ipynb](https://
 Leonardo de Freitas  
 Aspiring Data Scientist
 [GitHub Profile](https://github.com/lfreitas16/)
+
+---
+[Return to the table of contents](https://github.com/lfreitas16/Sales-Prediction-Rossmann#table-of-contents)
+
+---
