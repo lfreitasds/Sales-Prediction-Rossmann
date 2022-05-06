@@ -3,6 +3,7 @@
 
 ---
 ## Table of Contents
+
 [1 - Business Problem](https://github.com/lfreitas16/Sales-Prediction-Rossmann#1---business-problem)
 [1.1 - Description](https://github.com/lfreitas16/Sales-Prediction-Rossmann#11---description)
 [1.2 - Data Overview](https://github.com/lfreitas16/Sales-Prediction-Rossmann#12---data-overview)
@@ -24,6 +25,7 @@
 [6 - Next Steps to Improve](https://github.com/lfreitas16/Sales-Prediction-Rossmann#6---next-steps-to-improve)
 [7 - Technologies](https://github.com/lfreitas16/Sales-Prediction-Rossmann#7---technologies)
 [8 - Author](https://github.com/lfreitas16/Sales-Prediction-Rossmann#8---author)
+
 ---
 
 ## 1 - Business Problem <p id="business-problem"></p>
