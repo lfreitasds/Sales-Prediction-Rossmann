@@ -1,8 +1,32 @@
 # Welcome to the Rossmann Data Analysis
 ![alt text](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/img/rossmann.jpg?raw=true)
 
+---
+## Table of Contents
+[1 - Business Problem](https://github.com/lfreitas16/Sales-Prediction-Rossmann#1---business-problem)
+[1.1 - Description](https://github.com/lfreitas16/Sales-Prediction-Rossmann#11---description)
+[1.2 - Data Overview](https://github.com/lfreitas16/Sales-Prediction-Rossmann#12---data-overview)
+[2 - Business Assumptions](https://github.com/lfreitas16/Sales-Prediction-Rossmann#2---business-assumptions)
+[3 - Solution Strategy](https://github.com/lfreitas16/Sales-Prediction-Rossmann#3---solution-strategy)
+[Step 01 - Data Description]()
+[Step 02 - Feature Engineering]()
+[Step 03 - Filtering Variables]()
+[Step 04 - Exploratory Data Analysis]()
+[Step 05 - Data Preparation]()
+[Step 06 - Feature Selection]()
+[Step 07 - Machine Learning Modeling]()
+[Step 08 - Hyperparameter Fine Tuning]()
+[Step 09 - Error Analysis]()
+[Step 10 - Deploy Model To Production]()
+[Step 11 - Telegram Bot]()
+[4 - Business Results](https://github.com/lfreitas16/Sales-Prediction-Rossmann#4---business-results)
+[5 - Conclusions](https://github.com/lfreitas16/Sales-Prediction-Rossmann#5---conclusions)
+[6 - Next Steps to Improve](https://github.com/lfreitas16/Sales-Prediction-Rossmann#6---next-steps-to-improve)
+[7 - Technologies](https://github.com/lfreitas16/Sales-Prediction-Rossmann#7---technologies)
+[8 - Author](https://github.com/lfreitas16/Sales-Prediction-Rossmann#8---author)
+---
 
-## 1 - Business Problem
+## 1 - Business Problem <p id="business-problem"></p>
 
 
 ### 1.1 - Description
@@ -31,24 +55,33 @@
 
 Data source: [Kaggle](https://www.kaggle.com/competitions/rossmann-store-sales/data)
 
-## 2 - Business Assumption
+## 2 - Business Assumptions
 
 ## 3 - Solution Strategy
 
-**Step 01 - Data Description:**
-**Step 02 - Feature Engineering:**
-**Step 03 - Filtering Variables:**
+### Step 01 - Data Description:
+
+### Step 02 - Feature Engineering:
+
+### Step 03 - Filtering Variables:
 
 ![Mind Map Hypotheses](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/img/03_hypos_map.png?raw=true)
 
-**Step 04 - Exploratory Data Analysis:**
-**Step 05 - Data Preparation:**
-**Step 06 - Feature Selection:**
-**Step 07 - Machine Learning Modeling:**
-**Step 08 - Hyperparameter Fine Tuning:**
-**Step 09 - Error Analysis:**
-**Step 10 - Deploy Model To Production:**
-**Step 11 - Telegram Bot:**
+### Step 04 - Exploratory Data Analysis:
+
+### Step 05 - Data Preparation:
+
+### Step 06 - Feature Selection:
+
+### Step 07 - Machine Learning Modeling:
+
+### Step 08 - Hyperparameter Fine Tuning:
+
+### Step 09 - Error Analysis:
+
+### Step 10 - Deploy Model To Production:
+
+### Step 11 - Telegram Bot:
 
 ![Telegram Bot Architecture](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/img/11_bot_arch.jpg?raw=true)
 
