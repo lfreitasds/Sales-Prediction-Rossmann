@@ -5,8 +5,11 @@
 ## Table of Contents
 
 [1 - Business Problem](https://github.com/lfreitas16/Sales-Prediction-Rossmann#1---business-problem)
+
 [1.1 - Description](https://github.com/lfreitas16/Sales-Prediction-Rossmann#11---description)
+
 [1.2 - Data Overview](https://github.com/lfreitas16/Sales-Prediction-Rossmann#12---data-overview)
+
 [2 - Business Assumptions](https://github.com/lfreitas16/Sales-Prediction-Rossmann#2---business-assumptions)
 [3 - Solution Strategy](https://github.com/lfreitas16/Sales-Prediction-Rossmann#3---solution-strategy)
 [Step 01 - Data Description]()
