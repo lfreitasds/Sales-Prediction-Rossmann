@@ -72,7 +72,7 @@ Data source: [Kaggle](https://www.kaggle.com/competitions/rossmann-store-sales/d
 
 ![CRISP-DM](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/img/03_crisp.png?raw=true)
 CRISP-DM Diagram from Wikipedia
-<img src="img/03_crisp.png" width="100">
+<img src="img/03_crisp.png" width="500">  
 CRISP-DM Diagram from Wikipedia
 
  [Notebook.ipynb](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/Notebook.ipynb)
