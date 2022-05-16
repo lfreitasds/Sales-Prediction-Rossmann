@@ -21,8 +21,8 @@
 * [Step 06 - Feature Selection](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-06---feature-selection)
 * [Step 07 - Machine Learning Modeling](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-07---machine-learning-modeling)
 * [Step 08 - Hyperparameter Fine Tuning](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-08---hyperparameter-fine-tuning)
-* [Step 09 - Error Analysis](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-09---error-analysis)
-* [Step 10 - Deploy Model To Production](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-10---deploy-model-to-production)
+* [Step 09 - Performance Evaluation](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-09---error-analysis)
+* [Step 10 - Model Deployment Production](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-10---deploy-model-to-production)
 * [Step 11 - Telegram Bot](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-11---telegram-bot)
 
 [4 - Business Results](https://github.com/lfreitas16/Sales-Prediction-Rossmann#4---business-results)
@@ -58,10 +58,10 @@
 | StoreType | differentiates between 4 different store models: a, b, c, d |
 | Assortment | describes an assortment level: a = basic, b = extra, c = extended |
 | CompetitionDistance | distance in meters to the nearest competitor store |
-| CompetitionOpenSince[Month/Year] | gives the approximate year and month of the time the nearest competitor was opened |
+| CompetitionOpenSince [Month/Year] | gives the approximate year and month of the time the nearest competitor was opened |
 | Promo | indicates whether a store is running a promo on that day |
 | Promo2 | Promo2 is a continuing and consecutive promotion for some stores: 0 = store is not participating, 1 = store is participating |
-| Promo2Since[Year/Week] | describes the year and calendar week when the store started participating in Promo2 |
+| Promo2Since [Year/Week] | describes the year and calendar week when the store started participating in Promo2 |
 | PromoInterval | describes the consecutive intervals Promo2 is started, naming the months the promotion is started anew. E.g. "Feb,May,Aug,Nov" means each round starts in February, May, August, November of any given year for that store |
 
 Data source: [Kaggle](https://www.kaggle.com/competitions/rossmann-store-sales/data)
@@ -70,13 +70,21 @@ Data source: [Kaggle](https://www.kaggle.com/competitions/rossmann-store-sales/d
 
 ## 3 - Solution Strategy
 
+![CRISP-DM](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/img/03_crisp.png?raw=true)
+CRISP-DM Diagram from Wikipedia
+
+ [Notebook.ipynb](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/Notebook.ipynb)
+
+
 ### Step 01 - Data Description:
 
 ### Step 02 - Feature Engineering:
 
+![Mind Map Hypotheses](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/img/03_hypos_map.png?raw=true) Mind Map of Hypotheses
+
 ### Step 03 - Filtering Variables:
 
-![Mind Map Hypotheses](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/img/03_hypos_map.png?raw=true)
+
 
 ### Step 04 - Exploratory Data Analysis:
 
@@ -88,10 +96,10 @@ Data source: [Kaggle](https://www.kaggle.com/competitions/rossmann-store-sales/d
 
 ### Step 08 - Hyperparameter Fine Tuning:
 
-### Step 09 - Error Analysis:
+### Step 09 - Performance Evaluation:
 
-### Step 10 - Deploy Model To Production:
-
+### Step 10 - Model Deployment:
+![Production Architecture](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/img/10_production_arch.jpg?raw=true)
 ### Step 11 - Telegram Bot:
 
 ![Telegram Bot Architecture](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/img/11_bot_arch.jpg?raw=true)
@@ -107,7 +115,6 @@ You can launch the app here:
 | :-----: | :-----: | :-----: |
 | 1 | D | 00.00 |
 
-You can find more information in the Project Notebook: [Notebook.ipynb](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/Notebook.ipynb)
 
 ## 5 - Conclusions
 
