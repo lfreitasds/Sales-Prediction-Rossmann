@@ -1,5 +1,4 @@
 # Welcome to the Rossmann Data Analysis
-![alt text](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/img/rossmann.jpg?raw=true)
 <img src="img/rossmann.jpg">
 
 ---
@@ -81,7 +80,6 @@ Data source: [Kaggle](https://www.kaggle.com/competitions/rossmann-store-sales/d
 ## 3 - Solution Strategy
 The CRISP-DM methodology served as the base for this data science project. This process model features six phases to deliver a complete functional solution (end-to-end value) to a business problem. Once we deliver the first solution, we can iterate again, find new insights, tweak parameters, improve performance, and deliver more value. During the project phases we can talk to the stakeholders to update the progress and set expectations.  
 
-![CRISP-DM](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/img/03_crisp.png?raw=true)
 <img src="img/03_crisp.png" width="500">  
 CRISP-DM Diagram from Wikipedia
 
@@ -92,12 +90,10 @@ CRISP-DM Diagram from Wikipedia
 * Evaluation – Which model best meets the business objectives?
 * Deployment – How do stakeholders access the results?
 
-To see all the codes and visualizations for the following steps please check the project's [Notebook](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/Notebook.ipynb).
-
-[Notebook](Notebook.ipynb).
+To see all the codes and visualizations for the following steps please check the project's [Notebook](Notebook.ipynb).
 
 
-### Step 01 - Data Description:
+### Step 01 - Data Description
 Goals: Determine how long it will take to solve the problem and estimate computational requirements.
 * Rename the columns from their existing state to snake case.
 * Check how large the dataset is (in numbers of rows and columns).
@@ -107,12 +103,13 @@ Goals: Determine how long it will take to solve the problem and estimate computa
 * Perform descriptive statistics to reduce the data into a simpler summary.
 
 
-### Step 02 - Feature Engineering:
+### Step 02 - Feature Engineering
 Goal: Have the predictor variables available when exploring the dataset.
 * Create a mind map to generate hypotheses: Place the target variable in the center of the map and the agents in the branches. Try to map all the attributes that impact sales.
-![Mind Map Hypotheses](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/img/03_hypos_map.png?raw=true)
+
 <img src="img/03_hypos_map.png" width="1000">
 Mind Map of Hypotheses
+
 
 * Create a list of  hypotheses: Assume whether the hypothesis will cause more or less sales. Later on, each hypothesis will be validated or discarded to originate an insight.
 * Rank the hypotheses on data availability to create a final list.
@@ -120,7 +117,7 @@ Mind Map of Hypotheses
 * Transform some variables to create a new set of more effective features.
 
 
-### Step 03 - Filtering Variables:
+### Step 03 - Filtering Variables
 Goal: Consider data restrictions before exploring the dataset.
 * Select the rows for open stores. 
 * Select the rows for sales greater than zero.
@@ -128,7 +125,7 @@ Goal: Consider data restrictions before exploring the dataset.
 * Exclude columns with a single value.
 
 
-### Step 04 - Exploratory Data Analysis:
+### Step 04 - Exploratory Data Analysis
 Goals: Determine which variables impact the target variable, test hypotheses and better understand the business.
 
 Univariate Analysis:
@@ -144,7 +141,7 @@ Multivariate Analysis:
 * Categorical variables: Create a function to calculate the Cramer's V coefficient between two variables. Make all the possible combinations between the variables to create a dataframe and plot a correlation heatmap to identify the features that are suitable for our model training.
 
 
-### Step 05 - Data Preparation:
+### Step 05 - Data Preparation
 Goal: Put the variables on the same scale to improve the performance of the machine learning algorithms.
 * Check the univariate analysis for normal distributions and choose the variables to normalize. In our case, none of the  variables had a typical normal distribution with standard deviations.
 * Convert categorical data to numbers so the model can learn. Convert the actual range of values into a predefined range. For variables with outliers use Robust Scaler, otherwise use MinMaxScaler.
@@ -153,7 +150,7 @@ Goal: Put the variables on the same scale to improve the performance of the mach
 * Encode the time information to convey its cyclical nature to our model.
 
 
-### Step 06 - Feature Selection:
+### Step 06 - Feature Selection
 Goal: Reduce the number of input variables by selecting those that have the strongest relationship with the target variable.
 * Split the dataset into train and test sets. The train dataset is used to fit the machine learning model. The test dataset is used to estimate the performance of the machine learning model on data not used to train the model. In our case, it contains the last six weeks of sales.
 * Run the Boruta algorithm as the feature selector. It stops either when all features get confirmed or rejected or it reaches a specified limit of random forest.
@@ -161,7 +158,7 @@ Goal: Reduce the number of input variables by selecting those that have the stro
 * Decide to keep or not the columns selected. This is our first CRISP cycle, so we can keep only the columns selected by Boruta and add different variables in a second cycle to see if the performance improves.
 
 
-### Step 07 - Machine Learning Modeling:
+### Step 07 - Machine Learning Modeling
 Goal: Train machine learning algorithms on historical data so they can learn the relationship between input and output and predict future sales.
 
 We chose the following five models because they are faster to implement. The idea was to finish the CRISP first iteration as quickly as possible (business strategy) and deliver the first version of the solution.
@@ -176,7 +173,6 @@ We chose the following five models because they are faster to implement. The ide
 * Implement the function to calculate three types of error to evaluate the performance of all models.
 * Compare single performance scores. 
 
-![Models Single Performance](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/img/07-1_sing_perf.png?raw=true)
 <img src="img/07-1_sing_perf.png" width="500">
 
 It's noticeable that our target variable is complex, that's why linear models didn't perform so well. 
@@ -186,20 +182,19 @@ The RMSE value found does not allow us to draw conclusions about the performance
 * K-Fold method: In k-fold cross-validation, you split the input data into k subsets of data (also known as folds). You train the model on all but one (k-1) of the subsets, and then evaluate the model on the subset that was not used for training. This process is repeated k times, with a different subset reserved for evaluation (and excluded from training) each time.
 * Compare the real performance and choose the best model: 
 
-![Real Performance](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/img/07-2_perf_cv.png?raw=true)
 <img src="img/07-2_perf_cv.png" width="500">
 
 Although Random Forest performed better, we chose XGBoost Regression because decision trees are more computationally expensive to train.
 
 
-### Step 08 - Hyperparameter Fine Tuning:
+### Step 08 - Hyperparameter Fine Tuning
 Goal: Find the ideal configuration of hyperparameters in order to achieve optimal performance.
 * Implement Random Search: Set up a grid of hyperparameter values and select random combinations to train the model. The number of search iterations is set based on time/resources.
 * Analyze the results: The best score and hyperparameters configuration that achieved the best performance.
 * Rerun the final model using the tuned hyperparameters.
 * Save the trained model as a pickle file.
 
-### Step 09 - Performance Evaluation:
+### Step 09 - Performance Evaluation
 Goal: Use metrics to effectively evaluate our predictive model and verify if it is ready to be brought into production. 
 Note that we cannot calculate accuracy for a regression model. The performance of a regression model must be reported as an error.
 * Mean Absolute Error (MAE): The average of the sum of absolute difference between the actual values and the predicted values.
@@ -208,38 +203,33 @@ Note that we cannot calculate accuracy for a regression model. The performance o
 * Mean Percentage Error (MPE): The mean percentage error (MPE) equation is exactly like that of MAPE. The only difference is that it lacks the absolute value operation. It is useful to us because it allows us to see if our model systematically underestimates (negative error) or overestimates (positive error).
 * Build performance visualizations to summarize the measures of error.
 
-![Graph 1](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/img/9-1_perf_graph.png?raw=true)
-<img src="img/9-1_perf_graph.png" width="500">
+<img src="img/9-1_perf_graph.png" width="500">  
 Dates vs Sales
 
-![Graph 2](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/img/9-2_perf_graph.png?raw=true)
-<img src="img/9-2_perf_graph.png" width="500">
+<img src="img/9-2_perf_graph.png" width="500">  
 Dates vs Error Rate
 
-![Graph 3](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/img/9-3_perf_graph.png?raw=true)
-<img src="img/9-3_perf_graph.png" width="500">
+<img src="img/9-3_perf_graph.png" width="500">  
 Error
 
-![Graph 4](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/img/9-4_perf_graph.png?raw=true)
-<img src="img/9-4_perf_graph.png" width="500">
+<img src="img/9-4_perf_graph.png" width="500">  
 Predictions vs Error
 
 
-### Step 10 - Model Deployment:
+### Step 10 - Model Deployment
 Goal: Save the trained model in a production environment allowing others to request and get the predictions.
 * Deploy the model using Flask as an API on Heroku cloud server.
 
 ![Production Architecture](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/img/10_production_arch.jpg?raw=true)
 <img src="img/10_production_arch.jpg" width="800">
 
-### Step 11 - Telegram Bot:
+### Step 11 - Telegram Bot
 Goal: Create a real data product as the result of a complete data science project that can be accessed by anyone using a device capable of making an API request.
 * Build a Telegram bot using Flask and deploy it on Heroku cloud server. 
-![Telegram Bot Architecture](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/img/11_bot_arch.jpg?raw=true)
+<img src="img/11_bot_arch.jpg" width="800">
 
 Telegram bot demonstration: Open the chat, write /store_id and click send to get back the sales prediction for the chosen store.
 
-![Telegram Bot](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/img/bot.gif)
 <img src="img/bot.gif">
 
 The requested store id may exist in the train dataset, but not in the test dataset. In this case, the user will receive back the following message: "Store Not Available".
@@ -250,14 +240,13 @@ You can launch the app here: [Telegram Bot](https://t.me/rossmann_lf_bot)
 The table below shows the best and worst-case scenarios for each store (over or under predicting) sorted by the MAPE.
 * The best-case equals the predicted value plus the MAE and the worst-case equals the predicted value minus the MAE.
 
-![Business Scenarios](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/img/4_scenarios.png?raw=true)
 <img src="img/4_scenarios.png" width="500">
 
 ## 5 - Conclusions
-This data analysis provided a better understanding of the business and validated many assumptions.
-Based on historical data, future sales were forecast.
-Machine learning forecasting proved to outperform traditional methods.
-The ultimate goal of these eleven steps presented is to improve business performance.
+This data analysis provided a better understanding of the business and validated many assumptions.  
+Based on historical data, future sales were forecast.  
+Machine learning forecasting proved to outperform traditional methods.  
+The ultimate goal of these eleven steps presented is to improve business performance.  
 This data product will help the business team make better decisions, attract more customers and consequently more sales.
 
 
