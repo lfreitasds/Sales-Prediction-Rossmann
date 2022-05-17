@@ -1,10 +1,11 @@
 # Welcome to the Rossmann Data Analysis
 ![alt text](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/img/rossmann.jpg?raw=true)
+<img src="img/rossmann.jpg">
 
 ---
 ## Table of Contents
 
-[1 - Business Problem](https://github.com/lfreitas16/Sales-Prediction-Rossmann#1---business-problem)
+[1 - Business Problem](https://github.com/lfreitas16/Sales-Prediction-Rossmann#1---business-problem-)
 
 * [1.1 - Description](https://github.com/lfreitas16/Sales-Prediction-Rossmann#11---description)
 * [1.2 - Data Overview](https://github.com/lfreitas16/Sales-Prediction-Rossmann#12---data-overview)
@@ -45,7 +46,7 @@ Rossmann is a large German drugstore chain with an online shop and over 3000 sto
 
 Rossmann's CFO wants to refurbish the stores and to plan this investment, he asked the managers at a monthly review meeting what the revenue for each store in the next six weeks would be. To answer this question they hired our data consultancy to forecast the sales based on the past years' sales history.
 
-Disclaimer: This project is intended for practice and study only.
+**Disclaimer**: This project is intended for practice and study only.
 
 ### 1.2 - Data Overview
 
@@ -84,16 +85,17 @@ The CRISP-DM methodology served as the base for this data science project. This 
 <img src="img/03_crisp.png" width="500">  
 CRISP-DM Diagram from Wikipedia
 
-Business understanding – What does the business need?
-Data understanding – What data do we have / need? Is it clean?
-Data preparation – How do we organize the data for modeling?
-Modeling – What modeling techniques should we apply?
-Evaluation – Which model best meets the business objectives?
-Deployment – How do stakeholders access the results?
+* Business understanding – What does the business need?
+* Data understanding – What data do we have / need? Is it clean?
+* Data preparation – How do we organize the data for modeling?
+* Modeling – What modeling techniques should we apply?
+* Evaluation – Which model best meets the business objectives?
+* Deployment – How do stakeholders access the results?
 
 To see all the codes and visualizations for the following steps please check the project's [Notebook](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/Notebook.ipynb).
 
-[TESTE](main/Notebook.ipynb).
+[Notebook](Notebook.ipynb).
+
 
 ### Step 01 - Data Description:
 Goals: Determine how long it will take to solve the problem and estimate computational requirements.
@@ -104,16 +106,19 @@ Goals: Determine how long it will take to solve the problem and estimate computa
 * Find the proportion of each variable type: numerical, categorical, and ordinal.
 * Perform descriptive statistics to reduce the data into a simpler summary.
 
+
 ### Step 02 - Feature Engineering:
 Goal: Have the predictor variables available when exploring the dataset.
-*Create a mind map to generate hypotheses: Place the target variable in the center of the map and the agents in the branches. Try to map all the attributes that impact sales.
+* Create a mind map to generate hypotheses: Place the target variable in the center of the map and the agents in the branches. Try to map all the attributes that impact sales.
 ![Mind Map Hypotheses](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/img/03_hypos_map.png?raw=true)
 <img src="img/03_hypos_map.png" width="1000">
 Mind Map of Hypotheses
+
 * Create a list of  hypotheses: Assume whether the hypothesis will cause more or less sales. Later on, each hypothesis will be validated or discarded to originate an insight.
 * Rank the hypotheses on data availability to create a final list.
 * Create new variables that will be helpful for our model.
 * Transform some variables to create a new set of more effective features.
+
 
 ### Step 03 - Filtering Variables:
 Goal: Consider data restrictions before exploring the dataset.
@@ -121,6 +126,7 @@ Goal: Consider data restrictions before exploring the dataset.
 * Select the rows for sales greater than zero.
 * Exclude columns already used to create new variables. 
 * Exclude columns with a single value.
+
 
 ### Step 04 - Exploratory Data Analysis:
 Goals: Determine which variables impact the target variable, test hypotheses and better understand the business.
@@ -137,6 +143,7 @@ Multivariate Analysis:
 * Numerical variables: Plot a correlation heatmap to show the relationships among many variables at the same time. Negative correlations are in black and positive correlations in white.
 * Categorical variables: Create a function to calculate the Cramer's V coefficient between two variables. Make all the possible combinations between the variables to create a dataframe and plot a correlation heatmap to identify the features that are suitable for our model training.
 
+
 ### Step 05 - Data Preparation:
 Goal: Put the variables on the same scale to improve the performance of the machine learning algorithms.
 * Check the univariate analysis for normal distributions and choose the variables to normalize. In our case, none of the  variables had a typical normal distribution with standard deviations.
@@ -145,12 +152,14 @@ Goal: Put the variables on the same scale to improve the performance of the mach
 * Log-transform the target variable to convert a skewed distribution to a normal distribution.
 * Encode the time information to convey its cyclical nature to our model.
 
+
 ### Step 06 - Feature Selection:
 Goal: Reduce the number of input variables by selecting those that have the strongest relationship with the target variable.
 * Split the dataset into train and test sets. The train dataset is used to fit the machine learning model. The test dataset is used to estimate the performance of the machine learning model on data not used to train the model. In our case, it contains the last six weeks of sales.
 * Run the Boruta algorithm as the feature selector. It stops either when all features get confirmed or rejected or it reaches a specified limit of random forest.
 * Compare the selected columns with the summary of hypotheses from step 4. 
 * Decide to keep or not the columns selected. This is our first CRISP cycle, so we can keep only the columns selected by Boruta and add different variables in a second cycle to see if the performance improves.
+
 
 ### Step 07 - Machine Learning Modeling:
 Goal: Train machine learning algorithms on historical data so they can learn the relationship between input and output and predict future sales.
@@ -162,12 +171,13 @@ We chose the following five models because they are faster to implement. The ide
 * Random Forest Regression Model: It is an ensemble of decision trees and a natural extension of bagging.
 * XGBoost Regression model: It is an implementation of gradient boosting that can be used for regression predictive modeling.  
 
+
 * Implement and run the models.
 * Implement the function to calculate three types of error to evaluate the performance of all models.
 * Compare single performance scores. 
 
 ![Models Single Performance](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/img/07-1_sing_perf.png?raw=true)
-<img src="img/07-1_sing_perf.png" width="450">
+<img src="img/07-1_sing_perf.png" width="500">
 
 It's noticeable that our target variable is complex, that's why linear models didn't perform so well. 
 The RMSE value found does not allow us to draw conclusions about the performance of a model. We need to test the algorithm over more sales weeks, not just the last weeks of the dataset.
@@ -177,8 +187,10 @@ The RMSE value found does not allow us to draw conclusions about the performance
 * Compare the real performance and choose the best model: 
 
 ![Real Performance](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/img/07-2_perf_cv.png?raw=true)
-<img src="img/07-2_perf_cv.png" width="450">
+<img src="img/07-2_perf_cv.png" width="500">
+
 Although Random Forest performed better, we chose XGBoost Regression because decision trees are more computationally expensive to train.
+
 
 ### Step 08 - Hyperparameter Fine Tuning:
 Goal: Find the ideal configuration of hyperparameters in order to achieve optimal performance.
@@ -199,15 +211,19 @@ Note that we cannot calculate accuracy for a regression model. The performance o
 ![Graph 1](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/img/9-1_perf_graph.png?raw=true)
 <img src="img/9-1_perf_graph.png" width="500">
 Dates vs Sales
+
 ![Graph 2](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/img/9-2_perf_graph.png?raw=true)
 <img src="img/9-2_perf_graph.png" width="500">
 Dates vs Error Rate
+
 ![Graph 3](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/img/9-3_perf_graph.png?raw=true)
 <img src="img/9-3_perf_graph.png" width="500">
 Error
+
 ![Graph 4](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/img/9-4_perf_graph.png?raw=true)
 <img src="img/9-4_perf_graph.png" width="500">
 Predictions vs Error
+
 
 ### Step 10 - Model Deployment:
 Goal: Save the trained model in a production environment allowing others to request and get the predictions.
@@ -221,10 +237,11 @@ Goal: Create a real data product as the result of a complete data science projec
 * Build a Telegram bot using Flask and deploy it on Heroku cloud server. 
 ![Telegram Bot Architecture](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/img/11_bot_arch.jpg?raw=true)
 
-Telegram bot demonstration. Open the chat, write /store_id and click send to get back the sales prediction for the chosen store.
+Telegram bot demonstration: Open the chat, write /store_id and click send to get back the sales prediction for the chosen store.
 
 ![Telegram Bot](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/img/bot.gif)
 <img src="img/bot.gif">
+
 The requested store id may exist in the train dataset, but not in the test dataset. In this case, the user will receive back the following message: "Store Not Available".
 
 You can launch the app here: [Telegram Bot](https://t.me/rossmann_lf_bot)
@@ -232,6 +249,7 @@ You can launch the app here: [Telegram Bot](https://t.me/rossmann_lf_bot)
 ## 4 - Business Results
 The table below shows the best and worst-case scenarios for each store (over or under predicting) sorted by the MAPE.
 * The best-case equals the predicted value plus the MAE and the worst-case equals the predicted value minus the MAE.
+
 ![Business Scenarios](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/img/4_scenarios.png?raw=true)
 <img src="img/4_scenarios.png" width="500">
 
