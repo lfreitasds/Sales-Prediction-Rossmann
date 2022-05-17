@@ -81,7 +81,7 @@ Data source: [Kaggle](https://www.kaggle.com/competitions/rossmann-store-sales/d
 The CRISP-DM methodology served as the base for this data science project. This process model features six phases to deliver a complete functional solution (end-to-end value) to a business problem. Once we deliver the first solution, we can iterate again, find new insights, tweak parameters, improve performance, and deliver more value. During the project phases we can talk to the stakeholders to update the progress and set expectations.  
 
 <img src="img/03_crisp.png" width="500">  
-CRISP-DM Diagram from Wikipedia
+CRISP-DM Diagram from Wikipedia  
 
 * Business understanding – What does the business need?
 * Data understanding – What data do we have / need? Is it clean?
@@ -89,6 +89,7 @@ CRISP-DM Diagram from Wikipedia
 * Modeling – What modeling techniques should we apply?
 * Evaluation – Which model best meets the business objectives?
 * Deployment – How do stakeholders access the results?
+
 
 To see all the codes and visualizations for the following steps please check the project's [Notebook](Notebook.ipynb).
 
@@ -108,7 +109,7 @@ Goal: Have the predictor variables available when exploring the dataset.
 * Create a mind map to generate hypotheses: Place the target variable in the center of the map and the agents in the branches. Try to map all the attributes that impact sales.
 
 <img src="img/03_hypos_map.png" width="1000">
-Mind Map of Hypotheses
+Mind Map of Hypotheses  
 
 
 * Create a list of  hypotheses: Assume whether the hypothesis will cause more or less sales. Later on, each hypothesis will be validated or discarded to originate an insight.
@@ -128,15 +129,15 @@ Goal: Consider data restrictions before exploring the dataset.
 ### Step 04 - Exploratory Data Analysis
 Goals: Determine which variables impact the target variable, test hypotheses and better understand the business.
 
-Univariate Analysis:
+**Univariate Analysis**:
 * Plot a distribution graph of the target variable. The less the shape deviates from the normal, the better the model will perform.
 * Plot the numerical variables using histograms. Variables with variation (peaks) describe a behavior, and therefore will be more relevant to the model.
 * Plot the categorical variables using bar charts and overlapping lines to count the number of observations for each one.
 
-Bivariate analysis:
+**Bivariate analysis**:
 * Validate each hypothesis using data visualization methods to understand the relationship between each variable and the target variable. Try to derive insights from it.
 
-Multivariate Analysis:
+**Multivariate Analysis**:
 * Numerical variables: Plot a correlation heatmap to show the relationships among many variables at the same time. Negative correlations are in black and positive correlations in white.
 * Categorical variables: Create a function to calculate the Cramer's V coefficient between two variables. Make all the possible combinations between the variables to create a dataframe and plot a correlation heatmap to identify the features that are suitable for our model training.
 
@@ -203,24 +204,23 @@ Note that we cannot calculate accuracy for a regression model. The performance o
 * Mean Percentage Error (MPE): The mean percentage error (MPE) equation is exactly like that of MAPE. The only difference is that it lacks the absolute value operation. It is useful to us because it allows us to see if our model systematically underestimates (negative error) or overestimates (positive error).
 * Build performance visualizations to summarize the measures of error.
 
-<img src="img/9-1_perf_graph.png" width="500">  
 Dates vs Sales
+<img src="img/9-1_perf_graph.png" width="500">  
 
-<img src="img/9-2_perf_graph.png" width="500">  
 Dates vs Error Rate
+<img src="img/9-2_perf_graph.png" width="500">  
 
-<img src="img/9-3_perf_graph.png" width="500">  
 Error
+<img src="img/9-3_perf_graph.png" width="500">  
 
-<img src="img/9-4_perf_graph.png" width="500">  
 Predictions vs Error
+<img src="img/9-4_perf_graph.png" width="500">  
 
 
 ### Step 10 - Model Deployment
 Goal: Save the trained model in a production environment allowing others to request and get the predictions.
 * Deploy the model using Flask as an API on Heroku cloud server.
 
-![Production Architecture](https://github.com/lfreitas16/Sales-Prediction-Rossmann/blob/main/img/10_production_arch.jpg?raw=true)
 <img src="img/10_production_arch.jpg" width="800">
 
 ### Step 11 - Telegram Bot
@@ -228,7 +228,7 @@ Goal: Create a real data product as the result of a complete data science projec
 * Build a Telegram bot using Flask and deploy it on Heroku cloud server. 
 <img src="img/11_bot_arch.jpg" width="800">
 
-Telegram bot demonstration: Open the chat, write /store_id and click send to get back the sales prediction for the chosen store.
+**Telegram bot demonstration**: Open the chat, write /store_id and click send to get back the sales prediction for the chosen store.
 
 <img src="img/bot.gif">
 
@@ -243,11 +243,10 @@ The table below shows the best and worst-case scenarios for each store (over or 
 <img src="img/4_scenarios.png" width="500">
 
 ## 5 - Conclusions
-This data analysis provided a better understanding of the business and validated many assumptions.  
-Based on historical data, future sales were forecast.  
-Machine learning forecasting proved to outperform traditional methods.  
-The ultimate goal of these eleven steps presented is to improve business performance.  
-This data product will help the business team make better decisions, attract more customers and consequently more sales.
+* This data analysis provided a better understanding of the business and validated many assumptions.  
+* Based on historical data, future sales were forecast.  
+* Machine learning forecasting proved to outperform traditional methods.  
+* The ultimate goal of these eleven steps presented is to improve business performance. This data product will help the business team make better decisions, attract more customers and consequently more sales.
 
 
 ## 6 - Next Steps to Improve
