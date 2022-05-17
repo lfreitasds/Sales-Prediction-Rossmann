@@ -80,8 +80,8 @@ Data source: [Kaggle](https://www.kaggle.com/competitions/rossmann-store-sales/d
 ## 3 - Solution Strategy
 The CRISP-DM methodology served as the base for this data science project. This process model features six phases to deliver a complete functional solution (end-to-end value) to a business problem. Once we deliver the first solution, we can iterate again, find new insights, tweak parameters, improve performance, and deliver more value. During the project phases we can talk to the stakeholders to update the progress and set expectations.  
 
-<img src="img/03_crisp.png" width="500">  
 CRISP-DM Diagram from Wikipedia  
+<img src="img/03_crisp.png" width="500">  
 
 * Business understanding – What does the business need?
 * Data understanding – What data do we have / need? Is it clean?
@@ -108,9 +108,8 @@ Goals: Determine how long it will take to solve the problem and estimate computa
 Goal: Have the predictor variables available when exploring the dataset.
 * Create a mind map to generate hypotheses: Place the target variable in the center of the map and the agents in the branches. Try to map all the attributes that impact sales.
 
-<img src="img/03_hypos_map.png" width="1000">
 Mind Map of Hypotheses  
-
+<img src="img/03_hypos_map.png" width="1000">  
 
 * Create a list of  hypotheses: Assume whether the hypothesis will cause more or less sales. Later on, each hypothesis will be validated or discarded to originate an insight.
 * Rank the hypotheses on data availability to create a final list.
@@ -204,16 +203,16 @@ Note that we cannot calculate accuracy for a regression model. The performance o
 * Mean Percentage Error (MPE): The mean percentage error (MPE) equation is exactly like that of MAPE. The only difference is that it lacks the absolute value operation. It is useful to us because it allows us to see if our model systematically underestimates (negative error) or overestimates (positive error).
 * Build performance visualizations to summarize the measures of error.
 
-Dates vs Sales
+Dates vs Sales  
 <img src="img/9-1_perf_graph.png" width="500">  
 
-Dates vs Error Rate
+Dates vs Error Rate  
 <img src="img/9-2_perf_graph.png" width="500">  
 
-Error
+Error  
 <img src="img/9-3_perf_graph.png" width="500">  
 
-Predictions vs Error
+Predictions vs Error  
 <img src="img/9-4_perf_graph.png" width="500">  
 
 
