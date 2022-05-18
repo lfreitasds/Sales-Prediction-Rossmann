@@ -133,7 +133,7 @@ Goals: Determine which variables impact the target variable, test hypotheses and
 * Plot the numerical variables using histograms. Variables with variation (peaks) describe a behavior, and therefore will be more relevant to the model.
 * Plot the categorical variables using bar charts and overlapping lines to count the number of observations for each one.
 
-**Bivariate analysis**:
+**Bivariate Analysis**:
 * Validate each hypothesis using data visualization methods to understand the relationship between each variable and the target variable. Try to derive insights from it.
 
 **Multivariate Analysis**:
@@ -155,7 +155,7 @@ Goal: Reduce the number of input variables by selecting those that have the stro
 * Split the dataset into train and test sets. The train dataset is used to fit the machine learning model. The test dataset is used to estimate the performance of the machine learning model on data not used to train the model. In our case, it contains the last six weeks of sales.
 * Run the Boruta algorithm as the feature selector. It stops either when all features get confirmed or rejected or it reaches a specified limit of random forest.
 * Compare the selected columns with the summary of hypotheses from step 4. 
-* Decide to keep or not the columns selected. This is our first CRISP cycle, so we can keep only the columns selected by Boruta and add different variables in a second cycle to see if the performance improves.
+* Decide to keep or not the columns selected. This is our first CRISP iteration, so we can keep only the columns selected by Boruta and add different variables in a second iteration to see if the performance improves.
 
 
 ### Step 07 - Machine Learning Modeling
@@ -176,6 +176,7 @@ We chose the following five models because they are faster to implement. The ide
 <img src="img/07-1_sing_perf.png" width="500">
 
 It's noticeable that our target variable is complex, that's why linear models didn't perform so well. 
+
 The RMSE value found does not allow us to draw conclusions about the performance of a model. We need to test the algorithm over more sales weeks, not just the last weeks of the dataset.
 
 * Implement cross validation to assess how well our models perform on unseen data.
@@ -196,6 +197,7 @@ Goal: Find the ideal configuration of hyperparameters in order to achieve optima
 
 ### Step 09 - Performance Evaluation
 Goal: Use metrics to effectively evaluate our predictive model and verify if it is ready to be brought into production. 
+
 Note that we cannot calculate accuracy for a regression model. The performance of a regression model must be reported as an error.
 * Mean Absolute Error (MAE): The average of the sum of absolute difference between the actual values and the predicted values.
 * Mean Absolute Percentage Error (MAPE): Measures the error between actual and forecasted values as a percentage. 
@@ -207,13 +209,13 @@ Dates vs Sales
 <img src="img/9-1_perf_graph.png" width="500">  
 
 Dates vs Error Rate  
-<img src="img/9-2_perf_graph.png" width="500">  
+<img src="img/9-2_perf_graph.png" width="600">  
 
 Error  
-<img src="img/9-3_perf_graph.png" width="500">  
+<img src="img/9-3_perf_graph.png" width="600">  
 
 Predictions vs Error  
-<img src="img/9-4_perf_graph.png" width="500">  
+<img src="img/9-4_perf_graph.png" width="600">  
 
 
 ### Step 10 - Model Deployment
@@ -243,13 +245,13 @@ The table below shows the best and worst-case scenarios for each store (over or 
 
 ## 5 - Conclusions
 * This data analysis provided a better understanding of the business and validated many assumptions.  
-* Based on historical data, future sales were forecast.  
+* Future sales were forecast based on historical data.  
 * Machine learning forecasting proved to outperform traditional methods.  
 * The ultimate goal of these eleven steps presented is to improve business performance. This data product will help the business team make better decisions, attract more customers and consequently more sales.
 
 
 ## 6 - Next Steps to Improve
-In the next CRISP iteration we can try to solve the following issues, or at least learn more about it:
+In the next CRISP iteration we can try to solve the following issues, or at least learn more about them:
 * For some stores, the predictions were very off. We can try to understand why they are so hard to predict and maybe implement specific models for them.
 * To validate hypothesis 5, which states that stores with more Promo days should sell more, we would have to create a new variable to group the Promo days for each store. We decided to leave this validation for the next iteration.
 * Depending on business strategies, we can adjust the model to over or under forecast by analyzing the MPE (Mean Percentage Error).
@@ -257,18 +259,19 @@ In the next CRISP iteration we can try to solve the following issues, or at leas
 
 ## 7 - Technologies
 
-![Anaconda](https://img.shields.io/badge/Anaconda-%2344A833.svg?style=for-the-badge&logo=anaconda&logoColor=white)
-![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white)
-![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
-![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
-![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white)
-![PyCharm](https://img.shields.io/badge/pycharm-143?style=for-the-badge&logo=pycharm&logoColor=black&color=black&labelColor=green)
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![SciPy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white)
+[![Anaconda](https://img.shields.io/badge/Anaconda-%2344A833.svg?style=for-the-badge&logo=anaconda&logoColor=white)](https://docs.anaconda.com/anaconda/navigator/index.html)
+[![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white)](https://www.canva.com/)
+[![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com/en/2.1.x/)
+[![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
+[![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)](https://www.heroku.com/)
+[![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/)
+[![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org/)
+[![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+[![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white)](https://plotly.com/python/plotly-express/)
+[![PyCharm](https://img.shields.io/badge/pycharm-143?style=for-the-badge&logo=pycharm&logoColor=black&color=black&labelColor=green)](https://www.jetbrains.com/pycharm/)
+[![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
+[![SciPy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white)](https://scipy.org/)
 
 ## 8 - Author
 
