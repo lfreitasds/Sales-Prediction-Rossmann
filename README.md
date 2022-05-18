@@ -206,7 +206,7 @@ Note that we cannot calculate accuracy for a regression model. The performance o
 * Build performance visualizations to summarize the measures of error.
 
 Dates vs Sales  
-<img src="img/9-1_perf_graph.png" width="500">  
+<img src="img/9-1_perf_graph.png" width="600">  
 
 Dates vs Error Rate  
 <img src="img/9-2_perf_graph.png" width="600">  
@@ -222,12 +222,12 @@ Predictions vs Error
 Goal: Save the trained model in a production environment allowing others to request and get the predictions.
 * Deploy the model using Flask as an API on Heroku cloud server.
 
-<img src="img/10_production_arch.jpg" width="800">
+<img src="img/10_production_arch.jpg" width="700">
 
 ### Step 11 - Telegram Bot
 Goal: Create a real data product as the result of a complete data science project that can be accessed by anyone using a device capable of making an API request.
 * Build a Telegram bot using Flask and deploy it on Heroku cloud server. 
-<img src="img/11_bot_arch.jpg" width="800">
+<img src="img/11_bot_arch.jpg" width="700">
 
 **Telegram bot demonstration**: Open the chat, write /store_id and click send to get back the sales prediction for the chosen store.
 
@@ -259,9 +259,9 @@ In the next CRISP iteration we can try to solve the following issues, or at leas
 
 ## 7 - Technologies
 
-[![Anaconda](https://img.shields.io/badge/Anaconda-%2344A833.svg?style=for-the-badge&logo=anaconda&logoColor=white)](https://docs.anaconda.com/anaconda/navigator/index.html)
+[![Anaconda](https://img.shields.io/badge/Anaconda-%2344A833.svg?style=for-the-badge&logo=anaconda&logoColor=white)](https://www.anaconda.com/)
 [![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white)](https://www.canva.com/)
-[![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com/en/2.1.x/)
+[![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
 [![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
 [![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)](https://www.heroku.com/)
 [![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/)
@@ -270,7 +270,7 @@ In the next CRISP iteration we can try to solve the following issues, or at leas
 [![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white)](https://plotly.com/python/plotly-express/)
 [![PyCharm](https://img.shields.io/badge/pycharm-143?style=for-the-badge&logo=pycharm&logoColor=black&color=black&labelColor=green)](https://www.jetbrains.com/pycharm/)
 [![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/)
-[![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
+[![Scikit-Learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
 [![SciPy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white)](https://scipy.org/)
 
 ## 8 - Author
