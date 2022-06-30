@@ -4,36 +4,36 @@
 ---
 ## Table of Contents
 
-[1 - Business Problem](https://github.com/lfreitas16/Sales-Prediction-Rossmann#1---business-problem-)
+[1 - Business Problem](https://github.com/lfreitasds/Sales-Prediction-Rossmann#1---business-problem-)
 
-* [1.1 - Description](https://github.com/lfreitas16/Sales-Prediction-Rossmann#11---description)
-* [1.2 - Data Overview](https://github.com/lfreitas16/Sales-Prediction-Rossmann#12---data-overview)
+* [1.1 - Description](https://github.com/lfreitasds/Sales-Prediction-Rossmann#11---description)
+* [1.2 - Data Overview](https://github.com/lfreitasds/Sales-Prediction-Rossmann#12---data-overview)
 
-[2 - Business Assumptions](https://github.com/lfreitas16/Sales-Prediction-Rossmann#2---business-assumptions)
+[2 - Business Assumptions](https://github.com/lfreitasds/Sales-Prediction-Rossmann#2---business-assumptions)
 
-[3 - Solution Strategy](https://github.com/lfreitas16/Sales-Prediction-Rossmann#3---solution-strategy)
+[3 - Solution Strategy](https://github.com/lfreitasds/Sales-Prediction-Rossmann#3---solution-strategy)
 
-* [Step 01 - Data Description](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-01---data-description)
-* [Step 02 - Feature Engineering](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-02---feature-engineering)
-* [Step 03 - Filtering Variables](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-03---filtering-variables)
-* [Step 04 - Exploratory Data Analysis](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-04---exploratory-data-analysis)
-* [Step 05 - Data Preparation](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-05---data-preparation)
-* [Step 06 - Feature Selection](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-06---feature-selection)
-* [Step 07 - Machine Learning Modeling](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-07---machine-learning-modeling)
-* [Step 08 - Hyperparameter Fine Tuning](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-08---hyperparameter-fine-tuning)
-* [Step 09 - Performance Evaluation](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-09---performance-evaluation)
-* [Step 10 - Model Deployment](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-10---model-deployment)
-* [Step 11 - Telegram Bot](https://github.com/lfreitas16/Sales-Prediction-Rossmann#step-11---telegram-bot)
+* [Step 01 - Data Description](https://github.com/lfreitasds/Sales-Prediction-Rossmann#step-01---data-description)
+* [Step 02 - Feature Engineering](https://github.com/lfreitasds/Sales-Prediction-Rossmann#step-02---feature-engineering)
+* [Step 03 - Filtering Variables](https://github.com/lfreitasds/Sales-Prediction-Rossmann#step-03---filtering-variables)
+* [Step 04 - Exploratory Data Analysis](https://github.com/lfreitasds/Sales-Prediction-Rossmann#step-04---exploratory-data-analysis)
+* [Step 05 - Data Preparation](https://github.com/lfreitasds/Sales-Prediction-Rossmann#step-05---data-preparation)
+* [Step 06 - Feature Selection](https://github.com/lfreitasds/Sales-Prediction-Rossmann#step-06---feature-selection)
+* [Step 07 - Machine Learning Modeling](https://github.com/lfreitasds/Sales-Prediction-Rossmann#step-07---machine-learning-modeling)
+* [Step 08 - Hyperparameter Fine Tuning](https://github.com/lfreitasds/Sales-Prediction-Rossmann#step-08---hyperparameter-fine-tuning)
+* [Step 09 - Performance Evaluation](https://github.com/lfreitasds/Sales-Prediction-Rossmann#step-09---performance-evaluation)
+* [Step 10 - Model Deployment](https://github.com/lfreitasds/Sales-Prediction-Rossmann#step-10---model-deployment)
+* [Step 11 - Telegram Bot](https://github.com/lfreitasds/Sales-Prediction-Rossmann#step-11---telegram-bot)
 
-[4 - Business Results](https://github.com/lfreitas16/Sales-Prediction-Rossmann#4---business-results)
+[4 - Business Results](https://github.com/lfreitasds/Sales-Prediction-Rossmann#4---business-results)
 
-[5 - Conclusions](https://github.com/lfreitas16/Sales-Prediction-Rossmann#5---conclusions)
+[5 - Conclusions](https://github.com/lfreitasds/Sales-Prediction-Rossmann#5---conclusions)
 
-[6 - Next Steps to Improve](https://github.com/lfreitas16/Sales-Prediction-Rossmann#6---next-steps-to-improve)
+[6 - Next Steps to Improve](https://github.com/lfreitasds/Sales-Prediction-Rossmann#6---next-steps-to-improve)
 
-[7 - Technologies](https://github.com/lfreitas16/Sales-Prediction-Rossmann#7---technologies)
+[7 - Technologies](https://github.com/lfreitasds/Sales-Prediction-Rossmann#7---technologies)
 
-[8 - Author](https://github.com/lfreitas16/Sales-Prediction-Rossmann#8---author)
+[8 - Author](https://github.com/lfreitasds/Sales-Prediction-Rossmann#8---author)
 
 ---
 
@@ -277,9 +277,9 @@ In the next CRISP iteration we can try to solve the following issues, or at leas
 
 Leonardo de Freitas  
 Aspiring Data Scientist
-[GitHub Profile](https://github.com/lfreitas16/)
+[GitHub Profile](https://github.com/lfreitasds/)
 
 ---
-[Return to the table of contents](https://github.com/lfreitas16/Sales-Prediction-Rossmann#table-of-contents)
+[Return to the table of contents](https://github.com/lfreitasds/Sales-Prediction-Rossmann#table-of-contents)
 
 ---
